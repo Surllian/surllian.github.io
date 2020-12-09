@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Help with the Gittt!</title>
@@ -473,9 +473,9 @@
                             <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Crucial:</h3>
                             <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Set everything ready to commit: git add<br />
-                                2. Commit changes: git commit –m “description”<br />
-                                3. Update changes: git add –u<br />
-                                4. Move or rename: git mv “asdua”.php dir/”dauasb”.php, “” is a name<br />
+                                2. Commit changes: git commit -m "description"<br />
+                                3. Update changes: git add -u<br />
+                                4. Move or rename: git mv oldname.php dir/newname.php<br />
                                 5. Receive newest data update: git pull <br />
                                 <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
@@ -488,13 +488,13 @@
                             <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Basic Git Commands: Reset & Update</h2>
                             <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Reset:</h3>
                             <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
-                                1. Undo previous commit: git reset –soft HEAD~ <br />
+                                1. Undo previous commit: git reset --soft HEAD~ <br />
                                 ... <br />
                             </p>
                             <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Update:</h3>
                             <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
-                                1. Commit and update to recent commit: git commit –amend –m “description”<br />
-                                2. Upload: git commit –m “description”<br />
+                                1. Commit and update to recent commit: git commit --amend -m "description"<br />
+                                2. Upload: git commit ï¿½m ï¿½descriptionï¿½<br />
                                 <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
                         </div>
@@ -512,12 +512,12 @@
                             <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. List all the branches: git branch<br />
                                 2. Rename branch1: -m OLDNAME NEWNAME<br />
-                                3. Rename branch2: git branch – move OLDNAME NEWNAME<br />
+                                3. Rename branch2: git branch -- move OLDNAME NEWNAME<br />
                                 4. New branch: git branch NEWBRANCHNAME<br />
                                 5. Change branch: git checkout BRANCHNAMETHATYOUWORK<br />
-                                6. Delete branch: git branch –D NAME<br />
-                                7. Delete merged branch1: git branch –d NAME<br />
-                                8. Delete merged branch2: git branch –delete NAME<br />
+                                6. Delete branch: git branch -D BRANCHNAME<br />
+                                7. Delete merged branch1: git branch -d NAME<br />
+                                8. Delete merged branch2: git branch --delete NAME<br />
                                 9. Merge branch: git merge NAME<br />
                                 <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
