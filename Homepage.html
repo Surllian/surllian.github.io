@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Page</title>
-      </head>
-    <style>
-        body {
-            margin: 0;
-        }
-        .header {
-            background-color: #f1f1f1;
-            padding: 20px 10px;
-            text-align: left;
-        }
-    </style>
-    <body>
-        <div class="header"><h1>Homepage</h1></div>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: #fc7cc2;
+        padding: 20px 10px;
+        text-align: left;
+    }
+
+    .navibar {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background: #773030;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>Homepage</h1>
+    </div>
+    <div class="navibar">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+    </div>
+
+</body>
+
 </html>
