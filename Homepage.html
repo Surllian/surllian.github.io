@@ -15,33 +15,45 @@
         box-sizing: border-box;
     }
 
-    .header {
-        background-color: #fc7cc2;
-        padding: 20px 10px;
-        text-align: left;
-    }
+    .nav {
+            background-color: #00a099;
+            overflow: hidden;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    .navibar {
-        position: fixed;
-        top: 0;
-        z-index: 100;
-        display: flex;
-        width: 100%;
-        height: 60px;
-        background: #773030;
-    }
+            .nav li {
+                display: inline-block;
+                padding: 14px 25px;
+                font-family: '000 Elephantmen TB';
+                font-size: 25px;
+                color: #eff0eb;
+            }
+
+            .nav a {
+                display: contents;
+            }
+
+            .nav li:hover {
+                background-color: #eacb48;
+                color: #484E4A
+            }
+
 </style>
 
 <body>
-    <div class="header">
-        <h1>Homepage</h1>
-    </div>
-    <div class="navibar">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-    </div>
-
+    <nav class ="nav">
+        <ul>
+            <a href=" #Overview"><li>Overview</li></a>
+            <a href=" #Installation"><li>Installation</li></a>
+            <a href=" #Basic commands"><li>Basic commands</li></a>
+            <a href=" #C&B"><li>Conflict resolve</li></a>
+            <a href=" #C&B"><li>Branching</li></a>
+        </ul>
+      </nav>
 </body>
 
 </html>
