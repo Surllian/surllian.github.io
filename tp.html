@@ -11,24 +11,32 @@
         margin: 0;
     }
 
-    .square {
-        width: 100%;
-        height: 100%;
-        background-color: #eff0eb;
-    }
-
     .square1 {
-        width: 100%;
-        height: 600px;
+        width: 2000x;
+        height: 700px;
         background-color: #eff0eb;
-        padding: 50px 60px;
+        padding: 50px 55px;
         text-align: left;
     }
 
     .square2 {
-        width: 1800px;
+        width: 1700px;
         height: 600px;
         background-color: #484E4A;
+        padding: 30px 55px;
+        text-align: left;
+        color: #eff0eb;
+    }
+
+    .square2 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .square2 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
     }
 
     .nav {
@@ -39,6 +47,7 @@
         border-width: 1px 0;
         margin: 0;
         text-align: center;
+        top: 0;
     }
 
     .nav li {
@@ -59,11 +68,19 @@
         height: fit-content;
     }
 
+    .main {
+        padding: 0px 0px;
+        margin-top: 100px;
+        height: 100%;
+        width: 100%;
+        background-color: #eff0eb;
+    }
+
     .column {
         float: left;
         margin-top: auto;
         font-family: '000 Elephantmen TB';
-        width: 28.125%;
+        width: 28.07%;
         padding: 50px;
         text-align: center;
         font-size: 25px;
@@ -71,9 +88,22 @@
         color: #eff0eb;
     }
 
+    .column1 {
+        float: left;
+        width: 30%;
+        padding: 15px;
+    }
+
+    .column2 {
+        float: left;
+        width: 60%;
+        padding: 15px;
+    }
+
     .containerTab {
-        padding: 10px;
-        height: 400px;
+        padding: 40px 100px;
+        width: 1883px;
+        height: 800px;
         color: #eff0eb;
     }
 
@@ -91,91 +121,130 @@
     }
 
     .footer {
-        background-color:#eff0eb;
-        padding: 10px;
+        background-color: #484E4A;
+        padding: 50px 55px;
+        margin-top: 40px;
         text-align: center;
+    }
+
+    @media screen and (max-width:600px) {
+
+        .column1,
+        .column2 {
+            width: 100%;
+        }
     }
 </style>
 
 <body>
-    <div class="square">
-        <nav class="nav">
-            <ul>
-                <a href="#Homepage">
-                    <li> Homepage </li>
-                </a>
-                <a href="tp.html">
-                    <li> Team Profile </li>
-                </a>
-                <a href="#ProjectIdea">
-                    <li> Project Idea </li>
-                </a>
-                <a href="#Feedbacks">
-                    <li> Feedbacks </li>
-                </a>
-                <a href="#ITtechno">
-                    <li> IT Technologies </li>
-                </a>
-                <a href="#ITwork">
-                    <li> IT work </li>
-                </a>
-                <a href="help.html">
-                    <li> Git Tutorial </li>
-                </a>
-            </ul>
-            <div class="square1">
-                <div class="square2">
+    <nav class="nav">
+        <ul>
+            <a href="#Homepage">
+                <li> Homepage </li>
+            </a>
+            <a href="tp.html">
+                <li> Team Profile </li>
+            </a>
+            <a href="#ProjectIdea">
+                <li> Project Idea </li>
+            </a>
+            <a href="#Feedbacks">
+                <li> Feedbacks </li>
+            </a>
+            <a href="#ITtechno">
+                <li> IT Technologies </li>
+            </a>
+            <a href="#ITwork">
+                <li> IT work </li>
+            </a>
+            <a href="help.html">
+                <li> Git Tutorial </li>
+            </a>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="square1">
+            <div class="square2">
+                <h1>Overview:</h1>
+                <p> As an advocator, it will be better if I can work with the another advocators or mediators. Working
+                    with teammates that have same characteristic will be easier. I can freely express my idea about the
+                    project and support another teammate in an effective way. In addition, When I can freely express my
+                    thought about the upcoming project, it makes me feel motivated because my work is meaningful.
+                    According to the 16Personalities, the advocate personality prefers not to think themselves as above
+                    or below another people and this thought is very important when working in a group, teammates with
+                    advocate personality, to be specific, will treat everyone equally and happy to contribute their
+                    thought on the group discussion, and it will be easier for a leader to control the group’s
+                    moderation and accommodate when conflict happens. Secondly according to the 16Personalities,
+                    mediators take pride in being honest and doing the right things in all circumstances. In other
+                    words, this characteristic is very necessary when working on the group assignment, it helps people
+                    to judge and evaluate the situation to take the right action other than listen to the instruction
+                    from another people, they will considerate what is right and wrong and try their best to bring the
+                    work to the perfection. Moreover, honest is very importance when participating in group work, an
+                    honest teammate will improve the trust between teammates and bring the harmony atmosphere to the
+                    group. For those reasons, I prefer to work with advocators and mediators than another type of
+                    personality.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:#484E4A;">
+                Tran Ngoc Anh Thu
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:#eacb48;">
+                Nguyen Hai Minh Trang
+            </div>
+            <div class="column" onclick="openTab('b3');" style="background:#00a099;">
+                Phan Do Ngoc Linh
+            </div>
+        </div>
 
+        <div id="b1" class="containerTab" style="display:none;background:#484E4A">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class='row'>
+                <div class='column2'>
+                    <h2>Box 1</h2>
+                    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus
+                        inermis
+                        ullamcorper nam. Ius error diceret deseruisse ad</p>
+                </div>
+                <div class='column1'>
+                    <h2>Box 1</h2>
+                    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus
+                        inermis
+                        ullamcorper nam. Ius error diceret deseruisse ad</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="column" onclick="openTab('b1');" style="background:#484E4A;">
-                    Tran Ngoc Anh Thu
-                </div>
-                <div class="column" onclick="openTab('b2');" style="background:#eacb48;">
-                    Nguyen Hai Minh Trang
-                </div>
-                <div class="column" onclick="openTab('b3');" style="background:#00a099;">
-                    Phan Do Ngoc Linh
-                </div>
-            </div>
+        </div>
 
-            <div id="b1" class="containerTab" style="display:none;background:#484E4A">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <h2>Box 1</h2>
-                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
-                    ullamcorper nam. Ius error diceret deseruisse ad</p>
-            </div>
+        <div id="b2" class="containerTab" style="display:none;background:#eacb48">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Box 2</h2>
+            <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
 
-            <div id="b2" class="containerTab" style="display:none;background:#eacb48">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <h2>Box 2</h2>
-                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
-                    ullamcorper nam. Ius error diceret deseruisse ad</p>
-            </div>
+        <div id="b3" class="containerTab" style="display:none;background:#00a099">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Box 3</h2>
+            <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                ullamcorper nam. Ius error diceret deseruisse ad</p>
+        </div>
 
-            <div id="b3" class="containerTab" style="display:none;background:#00a099">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <h2>Box 3</h2>
-                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
-                    ullamcorper nam. Ius error diceret deseruisse ad</p>
-            </div>
-
-            <script>
-                function openTab(tabName) {
-                    var i, x;
-                    x = document.getElementsByClassName("containerTab");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    document.getElementById(tabName).style.display = "block";
+        <script>
+            function openTab(tabName) {
+                var i, x;
+                x = document.getElementsByClassName("containerTab");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-            </script>
-        </nav>
+                document.getElementById(tabName).style.display = "block";
+            }
+        </script>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
     </div>
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+
 </body>
 
 </html>
