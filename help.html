@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Git tutorial</title>
     <meta charset="utf-8">
@@ -22,6 +22,7 @@
         .img {
             vertical-align: middle;
         }
+
         /* Slideshow container */
         .slideshow-container {
             max-width: 100%;
@@ -30,7 +31,8 @@
         }
 
         /* Next & previous buttons */
-        .prev, .next {
+        .prev,
+        .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -51,10 +53,11 @@
             border-radius: 3px 0 0 3px;
         }
 
-            /* On hover, add a black background color with a little bit see-through */
-            .prev:hover, .next:hover {
-                background-color: #eacb48;
-            }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: #eacb48;
+        }
 
         /* Caption text */
         .text {
@@ -76,6 +79,7 @@
             top: 35%;
             text-align: center;
         }
+
         /* Number text (1/3 etc) */
         .numbertext {
             color: #484E4A;
@@ -97,9 +101,10 @@
             transition: background-color 0.6s ease;
         }
 
-            .active, .dot:hover {
-                background-color: #484E4A;
-            }
+        .active,
+        .dot:hover {
+            background-color: #484E4A;
+        }
 
         /* Fading animation */
         .fade {
@@ -131,7 +136,10 @@
 
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
-            .prev, .next, .text {
+
+            .prev,
+            .next,
+            .text {
                 font-size: 11px
             }
         }
@@ -141,23 +149,23 @@
             overflow: hidden;
         }
 
-            .img2::after {
-                content: "";
-                display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background-color: #484E4A;
-                width: 100%;
-                height: 100%;
-                opacity: 0.8;
-            }
+        .img2::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #484E4A;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
 
-            .img2 img {
-                width: 100%;
-                display: block;
-                position: relative;
-            }
+        .img2 img {
+            width: 100%;
+            display: block;
+            position: relative;
+        }
 
         .square {
             height: 650px;
@@ -193,22 +201,22 @@
             text-align: center;
         }
 
-            .nav li {
-                display: inline-block;
-                padding: 14px 25px;
-                font-family: '000 Elephantmen TB';
-                font-size: 25px;
-                color: #eff0eb;
-            }
+        .nav li {
+            display: inline-block;
+            padding: 14px 25px;
+            font-family: '000 Elephantmen TB';
+            font-size: 25px;
+            color: #eff0eb;
+        }
 
-            .nav a {
-                display: contents;
-            }
+        .nav a {
+            display: contents;
+        }
 
-            .nav li:hover {
-                background-color: #eacb48;
-                color: #484E4A
-            }
+        .nav li:hover {
+            background-color: #eacb48;
+            color: #484E4A
+        }
 
         .content {
             padding: 16px;
@@ -220,9 +228,9 @@
             width: 100%;
         }
 
-            .sticky + .content {
-                padding-top: 60px;
-            }
+        .sticky+.content {
+            padding-top: 60px;
+        }
 
         .bor {
             width: auto;
@@ -241,26 +249,27 @@
             padding: 10px;
         }
 
-            .column.side1 {
-                width: 25%;
-                text-align: center;
-            }
+        .column.side1 {
+            width: 25%;
+            text-align: center;
+        }
 
-            /* Left and right column */
-            .column.side {
-                width: 50%;
-                text-align: center;
-            }
+        /* Left and right column */
+        .column.side {
+            width: 50%;
+            text-align: center;
+        }
 
-            .column.middle1 {
-                width: 100%;
-                text-align: center;
-            }
-            /* Middle column */
-            .column.middle {
-                width: 50%;
-                text-align: center;
-            }
+        .column.middle1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Middle column */
+        .column.middle {
+            width: 50%;
+            text-align: center;
+        }
 
         /* Clear floats after the columns */
         .row:after {
@@ -271,7 +280,11 @@
 
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
-            .column.side, .column.middle, .column.middle1, .column.side1 {
+
+            .column.side,
+            .column.middle,
+            .column.middle1,
+            .column.side1 {
                 width: 100%;
             }
         }
@@ -299,53 +312,70 @@
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1 style="font-family:'000 Elephantmen TB';color: #eff0eb; font-size: 50px">GitHub tutorial and more!</h1>
     </div>
 
     <ul class="nav">
-        <a href=" #Overview"><li>Overview</li></a>
-        <a href=" #Installation"><li>Installation</li></a>
-        <a href=" #Basic commands"><li>Basic commands</li></a>
-        <a href=" #C&B"><li>Conflict resolve</li></a>
-        <a href=" #C&B"><li>Branching</li></a>
+        <a href=" #Overview">
+            <li>Overview</li>
+        </a>
+        <a href=" #Installation">
+            <li>Installation</li>
+        </a>
+        <a href=" #Basic commands">
+            <li>Basic commands</li>
+        </a>
+        <a href=" #C&B">
+            <li>Conflict resolve</li>
+        </a>
+        <a href=" #C&B">
+            <li>Branching</li>
+        </a>
     </ul>
     <div class="content">
         <div class="slideshow-container" ; id="Overview">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <div class="img2">
-                    <img src="https://itplus-academy.edu.vn/upload/b7ad33828b0773d8f301805541d453df/images/l%C3%A2la/github.png" style="width:100%">
+                    <img src="https://itplus-academy.edu.vn/upload/b7ad33828b0773d8f301805541d453df/images/l%C3%A2la/github.png"
+                        style="width:100%">
                 </div>
                 <div class="Content">
-                    <h1 style="font-family: '000 Elephantmen TB'; font-size: 50px; color: #eacb48">GitHub or GeezHub?</h1>
+                    <h1 style="font-family: '000 Elephantmen TB'; font-size: 50px; color: #eacb48">GitHub or GeezHub?
+                    </h1>
                     <p style="font-family: 'Bahnschrift'; color: #eff0eb; font-size: 20px">
                         "Basically, Github is an online environment that allow people to publish their website,
                         help people to control the version, and people can freely collaborate with each other
                         to create their website."
                     </p>
                 </div>
-                <div class="text"><a href="https://www.coredna.com/blogs/what-is-git-and-github-part-two" ; style="color:#eff0eb">https://www.coredna.com/blogs/what-is-git-and-github-part-two</a></div>
+                <div class="text"><a href="https://www.coredna.com/blogs/what-is-git-and-github-part-two" ;
+                        style="color:#eff0eb">https://www.coredna.com/blogs/what-is-git-and-github-part-two</a></div>
             </div>
 
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <div class="img2">
-                    <img src="https://huynhthaihung.com/wp-content/uploads/2019/11/1-TnsFDs-DEye722CrQXjv8w.png" style="width: 100%">
+                    <img src="https://huynhthaihung.com/wp-content/uploads/2019/11/1-TnsFDs-DEye722CrQXjv8w.png"
+                        style="width: 100%">
                 </div>
                 <div class="Content">
                     <h1 style="font-family: '000 Elephantmen TB'; font-size: 50px; color: #eacb48">Meet the Git!</h1>
                     <p style="font-family: 'Bahnschrift';word-spacing:3px; color: #eff0eb;font-size: 20px">
                         "Git is a source code management software, which was developed by Linus Torvalds.
-                        In 2005, This software is used for Linux operating system development. Unlike CVS or Subversion (SVN),
+                        In 2005, This software is used for Linux operating system development. Unlike CVS or Subversion
+                        (SVN),
                         which has only one single place for the full version history of the software, in Git,
                         some of repositories can contain full history of all changes,
                         which made by code developer."
                     </p>
                 </div>
-                <div class="text"><a href="https://www.atlassian.com/git/tutorials/what-is-git" ; style="color:#eff0eb">https://www.atlassian.com/git/tutorials/what-is-git</a></div>
+                <div class="text"><a href="https://www.atlassian.com/git/tutorials/what-is-git" ;
+                        style="color:#eff0eb">https://www.atlassian.com/git/tutorials/what-is-git</a></div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
@@ -353,14 +383,16 @@
                     <img src="https://jinchuika.com/post/2-vs-code-remote/0-vs-code.png" ; style="width:100%">
                 </div>
                 <div class="Content">
-                    <h1 style="font-family:'000 Elephantmen TB'; font-size: 50px; color: #eacb48">Visual Studio Code</h1>
+                    <h1 style="font-family:'000 Elephantmen TB'; font-size: 50px; color: #eacb48">Visual Studio Code
+                    </h1>
                     <p style="font-family: 'Bahnschrift'; color: #eff0eb; font-size: 20px">
                         "Visual Studio Code, which developed by Microsoft,
                         is a place where developers can freely develop their website for Linux, MacOS, and Windows.
                         Especially, this software is totally FREE!"
                     </p>
                 </div>
-                <div class="text"><a href="https://cuongquach.com/visual-studio-code-la-gi.html" ; style="color:#eff0eb">https://cuongquach.com/visual-studio-code-la-gi.html</a></div>
+                <div class="text"><a href="https://cuongquach.com/visual-studio-code-la-gi.html" ;
+                        style="color:#eff0eb">https://cuongquach.com/visual-studio-code-la-gi.html</a></div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -406,7 +438,8 @@
             <div class="column side">
                 <div class="bor" ; style="border-color:#00a099">
                     <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Mac Installation</h2>
-                    <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                    <p
+                        style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                         <a href="https://git-scm.com/downloads">1. Go to this link!<br /></a>
                         2. Click for Mac Version <br />
                         3. Run the software! <br />
@@ -420,7 +453,8 @@
             <div class="column middle">
                 <div class="square" ; style="background-color: #484E4A; align-items:center">
                     <a href="https://www.youtube.com/watch?v=twFo9wCpdSU">
-                        <img src="https://www.pngkit.com/png/full/135-1354376_the-access-point-removed-and-the-data-is.png" width="65%"/>
+                        <img src="https://www.pngkit.com/png/full/135-1354376_the-access-point-removed-and-the-data-is.png"
+                            width="65%" />
                     </a>
                 </div>
             </div>
@@ -429,15 +463,18 @@
             <div class="column side">
                 <div class="square">
                     <a href="https://www.youtube.com/watch?v=2j7fD92g-gE">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Windows_logo_-_2012.png/700px-Windows_logo_-_2012.png" width="65%" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Windows_logo_-_2012.png/700px-Windows_logo_-_2012.png"
+                            width="65%" />
                     </a>
                 </div>
             </div>
 
             <div class="column middle">
                 <div class="bor" ; style="border-color:#484E4A">
-                    <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Windows Installation</h2>
-                    <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                    <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Windows Installation
+                    </h2>
+                    <p
+                        style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                         <a href="https://git-scm.com/downloads">1. Go to this link!<br /></a>
                         2. Click on the download for Windows version <br />
                         3. Run the software <br />
@@ -445,7 +482,8 @@
                         Click image for tutorial video <br />
                         Note: When you finish, this notification will pop up!
                     </p>
-                    <img src="https://codenotfound.com/assets/images/posts/git/git-installer.png" ; style="width: 60%" />
+                    <img src="https://codenotfound.com/assets/images/posts/git/git-installer.png" ;
+                        style="width: 60%" />
                 </div>
             </div>
         </div>
@@ -453,7 +491,8 @@
             <div class="column side">
                 <div class="bor" ; style="border-color:#eacb48">
                     <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Linux Installation</h2>
-                    <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100% ">
+                    <p
+                        style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100% ">
                         1. From your shell, install Git using "apt-get"<br />
                         2. Verify the installation was successful by typing git "--version" <br />
                         3. Configure your Git username and email using the following commands,
@@ -473,28 +512,37 @@
                 </div>
             </div>
         </div>
-        <div class="recta" ; style="background: linear-gradient(to top, #ff3300 0%, #ffffff 100%);" ; id="Basic commands">
+        <div class="recta" ; style="background: linear-gradient(to top, #ff3300 0%, #ffffff 100%);" ;
+            id="Basic commands">
             <div class="row">
                 <div class="column side">
                     <div class="bor1" ; style="border-color:#484E4A">
                         <div class="square1" ; style="background-color: white">
-                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Basic Git Commands: Setup & Crucial</h2>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Setup:</h3>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Basic Git
+                                Commands: Setup & Crucial</h2>
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Setup:</h3>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. See where is git located: which git<br />
                                 2. View Version of Git: --version<br />
                                 3. Create alias for Git status: Git config<br />
                                 4. Support Centre: git help<br />
                             </p>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Crucial:</h3>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Crucial:</h3>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Set everything ready to commit: git add .<br />
                                 2. Commit changes: git commit -m "description"<br />
                                 3. Update changes: git add -u<br />
                                 4. Move or rename: git mv oldname.php dir/newname.php<br />
                                 5. Receive newest data update: git pull <br />
                                 6. Clone a reposity to Visual Code Studio: git clone "URL link"<br />
-                                <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
+                                <a
+                                    href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
                         </div>
                     </div>
@@ -502,17 +550,25 @@
                 <div class="column middle">
                     <div class="bor1" ; style="border-color:#484E4A">
                         <div class="square1" ; style="background-color: white">
-                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Basic Git Commands: Reset & Update</h2>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Reset:</h3>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Basic Git
+                                Commands: Reset & Update</h2>
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Reset:</h3>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Undo previous commit: git reset --soft HEAD~ <br />
                                 ... <br />
                             </p>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Update:</h3>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Update:</h3>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Commit and update to recent commit: git commit --amend -m "description"<br />
                                 2. Upload: git commit -m "description"<br />
-                                <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
+                                <a
+                                    href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
                         </div>
                     </div>
@@ -525,8 +581,11 @@
                     <div class="bor1" ; style="border-color:#484E4A">
                         <div class="square1" ; style="background-color: white">
                             <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Branching</h2>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Branching:</h3>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Branching:</h3>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. List all the branches: git branch<br />
                                 2. Rename branch1: -m OLDNAME NEWNAME<br />
                                 3. Rename branch2: git branch -- move OLDNAME NEWNAME<br />
@@ -536,7 +595,8 @@
                                 7. Delete merged branch1: git branch -d NAME<br />
                                 8. Delete merged branch2: git branch --delete NAME<br />
                                 9. Merge branch: git merge NAME<br />
-                                <a href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
+                                <a
+                                    href="https://coderwall.com/p/ogyy4g/git-cheatsheet-basic-functions">Source!</a><br />
                             </p>
                         </div>
                     </div>
@@ -544,20 +604,30 @@
                 <div class="column side">
                     <div class="bor1" ; style="border-color:#484E4A">
                         <div class="square1" ; style="background-color: white">
-                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Conflict Resolve</h2>
-                            <h3 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">Conflict Resolve:</h3>
-                            <h4 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:26px">Same Name File:</h4>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h2 style="font-family:'000 Elephantmen TB'; color: #484E4A; font-size:35px">Conflict
+                                Resolve</h2>
+                            <h3
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:30px">
+                                Conflict Resolve:</h3>
+                            <h4
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:26px">
+                                Same Name File:</h4>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Do as usual : git add -> git commit -> git push <br />
                                 2. If there was error, add this command: git pull <br />
                                 3. Redo step 1 (or you can the file name ^^)
                             </p>
-                            <h4 style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:26px">Merge Conflict:</h4>
-                            <p style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
+                            <h4
+                                style="font-family:'000 Elephantmen TB'; color: #484E4A;text-align:left; padding:0px 25px; font-size:26px">
+                                Merge Conflict:</h4>
+                            <p
+                                style="font-family:'Titillium Web'; text-align:left; padding:0px 25px;font-size:20px; word-spacing:3px; width: 100%">
                                 1. Get branch script and name it "Bla": <br />
                                 git checkout feature_X -- V42__migration.sql
                                 mv Bla__migration.sql Bla__migration.sql <br />
-                                2. Get "Bla" script from previous merged commit : git checkout HEAD -- Bla__migration.sql <br />
+                                2. Get "Bla" script from previous merged commit : git checkout HEAD --
+                                Bla__migration.sql <br />
                                 3. Ensure the index has updated sucessfully: git -> git commit
                             </p>
                         </div> .
