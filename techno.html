@@ -26,7 +26,7 @@
 
     .square1 {
         width: 2000x;
-        height: 700px;
+        height: 100%;
         background-color: #eff0eb;
         padding: 50px 55px;
         text-align: left;
@@ -34,9 +34,10 @@
 
     .square2 {
         width: 1700px;
-        height: 600px;
+        height: 1100px;
         background-color: #484E4A;
         padding: 30px 55px;
+        margin-top: 100px;
         text-align: left;
         color: #eff0eb;
     }
@@ -47,6 +48,48 @@
     }
 
     .square2 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .square3 {
+        width: 1700px;
+        height: 900px;
+        background-color: #484E4A;
+        padding: 30px 55px;
+        margin-top: 80px;
+        text-align: left;
+        color: #eff0eb;
+    }
+
+    .square3 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .square3 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .square4 {
+        width: 1700px;
+        height: 1800px;
+        background-color: #484E4A;
+        padding: 30px 55px;
+        margin-top: 80px;
+        text-align: left;
+        color: #eff0eb;
+    }
+
+    .square4 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .square4 p {
         font-family: 'Titillium Web';
         font-size: 25px;
         text-align: justify;
@@ -82,7 +125,7 @@
     }
 
     .main {
-        padding: 0px 0px;
+        padding: 60px;
         margin-top: 100px;
         height: 100%;
         width: 100%;
@@ -125,6 +168,24 @@
         text-align: justify;
     }
 
+    .column3 {
+        float: left;
+        width: 50%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .column3 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .column3 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
+    }
+
     .containerTab {
         padding: 40px 100px;
         width: 1703px;
@@ -161,118 +222,9 @@
     @media screen and (max-width:600px) {
 
         .column1,
-        .column2 {
+        .column2,
+        .column3 {
             width: 100%;
-        }
-    }
-
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-
-        .prev,
-        .next,
-        .text {
-            font-size: 11px
         }
     }
 </style>
@@ -304,66 +256,196 @@
         </ul>
     </nav>
     <div class="main">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img_nature_wide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+        <div class="square1">
+            <div class="square2">
+                <h1>Typical Day Of Robots:</h1>
+                <p>
+                    Usually, robotics will take care of the job that is repeated, and required more physical power than
+                    using logical or intelligence approach. However, some robots can even do some complicated tasks by
+                    using the data and experience that they were taught. Nowadays, the use robotic are rapidly increased
+                    and widely expand the robotic area. Now, robots can learn how to cook, screw a T-shirt, make
+                    sneakers, hotel receptionist, and even conduct a funeral. <br> <br>
+                    Robotic Kitchen, which invented by Moley Robotics, consists of multi-jointed robotic hands
+                    filled with a lot of sensors. By using sensors, the Robotic Kitchen can detect the movement of
+                    people hand and guest the material to create the dishes. Also, it can download the recipe online by
+                    using via apps. By that, a chef master can own a lot of restaurant branches across the world and
+                    ensure that the dishes will be identical with their flagships after finishing. Moreover, app
+                    developer can develop an app that allow Robotic Kitchen to download famous chef’s recipe by paying
+                    the amount of money to support the chiefs, due to the Intellectual property rights. The Moley
+                    Robotics claimed that the Robotic Kitchen is released in 2018, however, there is no other
+                    announcement about Robotic Kitchen, but it will be costed $75,000. <br> <br>
+                    One of the companies that has evolved the most in this regard is the US
+                    Softwear Automation, creator of the Sewbot robotic system, which cuts the fabric and assembles it
+                    within the same space. The machine uses cameras and robotic arms that take only four minutes from
+                    cutting and sewing the fabric to making the garment. One of the first contracts that it signed was
+                    with the US Department of Defense for 1.25 million dollars. <br> <br>
+                    According to the Guardian , Softbank’s humanoid robot ‘Pepper’ dons robes to provide low-cost
+                    funerals complete with live-streaming option. In Japan, robots can serve as companions, helpers for
+                    the elderly, entertainment bots and even sexual partners, but now Softbank’s humanoid robot Pepper
+                    has put itself up for hire as a Buddhist priest for funerals. <br> <br>
+                    Taking the German blessing bot’s idea and running with it, Pepper’s new code will let it chant
+                    sutras in a computerized voice while tapping a drum, providing a cheaper alternative to a human
+                    priest to see your loved ones off into the eternal sleep. Moreover, this robot can live stream the
+                    funeral for relative, who cannot travel to the funeral due to the long distances. However, this
+                    robot is not yet to use in a real funeral. But in the future, this robot may be use to perform on a
+                    low-cost funeral.
+                </p>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img_snow_wide.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+            <div class="square3">
+                <h1>Impact:</h1>
+                <p>
+                    There are 3 important impacts of robotics to the society: <br>
+                    First, the impact of structured
+                    manipulation. In some industries, especially, car industry, people often use robot to manipulate and
+                    combine different part of cars together. This progress required a lot of time, accuracy and
+                    man-power. However, with robots, it will reduce the time and money that spent to make a car. <br>
+                    <br>
+                    Secondly, the impact of AI structured manipulation. By using machine learning, people can teach
+                    robot to do some simple tasks or even complicated jobs. Founded in 2011, Austin, the Briggo has
+                    spent total $19 million in funding to develop the first robotic baristas that can make 100 cups of
+                    coffee for an hour, this robot allows people to save their favorite drink for next fast transaction
+                    and do some advance coffee orders. At this stage, people can use robot as a worker that can memorize
+                    some basic things <br> <br>
+                    Finally, the impact of unstructured manipulation, this stage is
+                    when robotic is surpass the normal AI robot. When developers create a coffee barista robot, they had
+                    taught the robot to work with specific objects. For instance, a coffee cup is one of the specific
+                    objects, the developer has to calculate the size of the cup and teach barista robot to learn how to
+                    hold a coffee cup or pour the right amount of coffee by recognizing the size of the cup. However, if
+                    cup supplier is run out of that cup product, or bankrupted the developers have to teach robots how
+                    to use a new coffee cup to avoid the miss calculation when insert a new coffee cup into the robot.
+                    In unstructured manipulation, the developers will teach robot to adapt with the situation, which
+                    means that the robots are learning automatically. For instance, the Boris 2, the robot can grab
+                    object like human, Boris 2 will figure out how to grab an object by using algorithm, it will thing a
+                    lot of ways to grab an object using vector and then apply those algorithms to define how to grab an
+                    object. Now, robot can be truly assistance for people.
+                </p>
             </div>
+            <div class="square4">
+                <h1 style="text-align: center;">Affection:</h1>
+                <div class="row">
+                    <div class="column3">
+                        <h1 style="text-align: center;">Advantages</h1>
+                        <h1>For people:<br></h1>
+                        <p>
+                            Increase the production quantities: <br>
+                            + Henry Ford, the one who revolutionizing the automobile
+                            industry. He developed a machine that to either work independently or assists workers to
+                            speed up their tasks. He and his teammates developed a system that reduce the manufacturing
+                            of Model T from 12.5 hours to 93 minutes (~1.5 hour). With the help of robots, people can
+                            reduce the time of manufacturing the product and increase product quantities. Moreover,
+                            robots can be work without rest.<br><br>
+                            Maintain product quality: <br>
+                            + In the car factory, workers sometimes can incidentally create some
+                            defective products and had to start making it from the beginning. But with robots, it will
+                            reduce these mistakes and apply the same quality for every product.<br><br>
+                            Can cure mental diseases: <br>
+                            + Imaginary friend or AI friends can help people to overcome their
+                            loneliness, stressed, depressed or autism. These robots will be taught to learn about people
+                            emotion, diagnose the type of mental diseases and use the treatment library to cure or
+                            approach patients in a positive way. It can reduce the symptom affection to the
+                            patients.<br><br>
+                            Maintain and protect the environment: <br>
+                            + Ocean One, a humanoid robot developed by the Stanford
+                            Robotics Lab to explore the ocean and collect samples as effectively as a diver. The robot
+                            mimics the image of scuba diver, contain arms, depth perception, touch feedback, also, it
+                            can survive in significant depth of the Red Sea.<br><br>
+                        </p>
+                        <h1>Myself:<br></h1>
+                        <p>
+                            + A new thing to learn: Robotic programming is a new area for me in IT field. It will be
+                            great
+                            if I can explore and experience how to program an AI or normal robot. It also helps me to
+                            gain some new experience, which can be helpful to improve my project idea on the next level.
+                            For instance, create an AI that can research about the soil and plans different type of
+                            flowers based on the soil type.
+                        </p>
+                    </div>
+                    <div class="column3">
+                        <h1 style="text-align: center;">Disadvantages</h1>
+                        <p>
+                            People will be depend on robot: <br>
+                            + Robot is becoming more and more useful nowadays. And people can access to everything by
+                            clicking the keyboard mouse. For instance, automobile car is a hot topic and being discuss
+                            every day. However, what if automobile car becomes a main car type for
+                            transportation?<br><br>
+                            Miscalculation in robots:<br>
+                            + No one can make sure that robot can working smoothly without having any problems. In 2017,
+                            Facebook had shut down 2 AI chat bots, Bob and Alice, for creating new type of language that
+                            only understand by Bob and Alice . What if there are a network of AI robots that hide in the
+                            shadow and plan to rule the society?<br><br>
+                            Cyber security:<br>
+                            + Some of robots is connected to Internet, and it can be a target for hackers, they can
+                            steal
+                            information or monitor people through robots.
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img_mountains_wide.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+            <div class="square2" style="background-color: #eacb48;">
+                <h1 style="color:#484E4A;">Typical Day Of Cloud:</h1>
+                <p style="color:#484E4A;">
+                    Cloud allows users to store their data online. They will pay for the amount data that they use to
+                    store their information. Compared to normal computer, cloud is very very… very big! It can contain
+                    747 airplanes that fit inside rows and columns. Users can store their information on Cloud for
+                    unlimited time (but they have to pay first!). Cloud contains a lot of tools that allows people to
+                    freely access with the tools. Users can use Cloud’s tool to support their idea or teach robot how to
+                    performed like what they wanted. Cloud’s data center is located everywhere around the World, which
+                    means that users can access to Cloud from every countries and every time, but it might take a longer
+                    time to pinpoint where the user data is saved. It is safe to say that files and folders are safe
+                    when storing in Cloud, it will help people to access and upload their data safe and effectively.
+                    Users can use any devices to access to Cloud after sign in to their account, or do some
+                    authentication. Moreover, Cloud is a good place to backup user data, the memory storage of
+                    Cloud is very big, so user can freely backup their data many times that they wanted after paying an
+                    amount of money for their Cloud’s storage. Cloud computing is also used for chat bot’s system, the
+                    messages users will respond to the bot, and it will store information on Cloud’s system. There are 4
+                    types of Cloud, private Cloud, public Cloud, hybrid Cloud, and multi Cloud. Private Cloud is a
+                    private sever, that is belonged to one individual or organization, the data on that Cloud is only
+                    allow that user or organization to access. Public Cloud allows every user to access and download
+                    information, any organization can use it. Hybrid Cloud is a mix between private Cloud and public
+                    Cloud, which contains private and public servers, it is usually used for company that allow people
+                    to access the private cloud after paying an amount of money. For instance, Adobe and Microsoft will
+                    allow people to have an activate licenses code after users pay monthly money to extend the licenses
+                    code. Multi Cloud is Multi Cloud is the use of multiple cloud computing and storage services in a
+                    single heterogeneous architecture.
+                </p>
+            </div>
+            <div class="square3" style="background-color: #eacb48;">
+                <h1 style="color:#484E4A;">Impact:</h1>
+                <p style="color:#484E4A;">
+                    People can use Cloud to support their idea or project. In the past, it took 30 years to match the
+                    first gene and cost a lot of money, but less than 10 years later, the second gene is identified and
+                    the cost for second project lower a million USD compared to the first gene project, and in second
+                    project, people started using Cloud. Nowadays, the money to match gene is around 20-30 thousand
+                    dollars, which open a new path to research on how to cure cancer and other danger diseases. By using
+                    Cloud, people can freely access a wide range of information about their topic, if someone wants to
+                    create AI robot, he or she can access a lot of machine learning tutorials, samples by using Cloud.
+                    <br><br>
+                    With Cloud, people can work anywhere and anytime, by using private Cloud, people can upload company
+                    secret information or project (if they want to) and let another companions to collaborate with the
+                    project. However, organization have to adapt to use Cloud computing, and that is the most impact
+                    element. If Cloud computing is doing its job normally, in the future it may replace local computing,
+                    most of the users have started changed from using local Microsoft software from their device into
+                    using application, which provided by Google Drive when they have internet. In addition, Cloud
+                    computing can improve collaboration, users can collaborate with each other on a live sever with
+                    endless storage and back up file easily to prevent internet or server corruption.
+                </p>
+            </div>
+            <div class="square2" style="background-color: #eacb48;">
+                <h1 style="color: #484E4A;">Affection:</h1>
+                <p style="color:#484E4A;">
+                    I will consider what It job that I will learn after researching about Cloud computing. Also, I will
+                    learn more about working with Cloud computing. In the future, as a project leader, I have to store
+                    the data into Cloud, so it is necessary to learn how to work with Cloud. Also, I can learn Chinese
+                    language by access to Public Cloud, with a million users, there will be a wide range of sources for
+                    me to improve my Chinese language speaking skill. I can start working on IoT project by using Cloud,
+                    because Cloud store a variety tools and simple blocks that help beginner programmer to make
+                    something by using those tools and technologies. Finally, I can store my data and assignments to
+                    Google Drive so I can access and adjust or edit it everywhere and every time. Cloud also providing
+                    Google Docs, which very useful, can help people to collaborate with each other online.
+                </p>
+            </div>
         </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
     </div>
 </body>
 
