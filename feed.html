@@ -189,92 +189,60 @@
         <div class="square2" style="background-color:#eacb48;">
             <div class="row">
                 <div class="column2">
-                    <h1 style="color: #484E4A ;">Overview:</h1>
-                    <p style="color: #484E4A ;">This smart garden is using Arduino to calculate the humidity and
-                        temperature of the garden.
-                        After 1 minutes, the Arduino will push data to Thunkable (an IOS creating app) and it will
-                        illustrate the garden’s humidity and temperature. Moreover, the clock has 5 led lights that
-                        light on by pressing button in Thunkable app, or it will automatically turn on when the
-                        light sensor detects no light in the garden (as same as the garden light). Like normal soil
-                        calculator, the smart garden can calculate soil humidity and send notification if the soil
-                        humidity is low or over the range of permission. The user can active the automatically
-                        watering function by pressing button on Thunkable apps.</p>
+                    <h1 style="color: #484E4A ;">Tran Ngoc Anh Thu:</h1>
+                    <p style="color: #484E4A ;">I love Huy’s idea of a system that can help agricultural conditions
+                        under control.<br><br>
+
+                        However, I would like him to implement more details to the motivation and outcomes to his
+                        personal background. He stated that he would gain more experience about Arduino but why
+                        specifically smart garden. If the idea would come true, how it would mean for him.</p>
+                    <h1 style="color: #484E4A ;">Comment:</h1>
+                    <p style="color: #484E4A ;">
+                        I totally agree with statement. In the future, I will explain more details about what I gain
+                        from experience and about it smart garden, it will be a first step to utilize my goal to become
+                        true. Because as a project leader, you must know about IoT field to guide your team.
+                    </p>
                 </div>
                 <div class="column1">
-                    <img src="7.jpg" class="center-fit">
+                    <img src="1.jpg" class="center-fit">
                 </div>
             </div>
         </div>
         <div class="square2" style="background-color:#00a099;">
             <div class="row">
                 <div class="column1">
-                    <img src="8.png" class="center-fit">
+                    <img src="2.jpg" class="center-fit">
                 </div>
                 <div class="column2">
-                    <h1 style="color:#eff0eb ;">Motivation:</h1>
-                    <p style="color:#eff0eb ;">Firstly, this smart garden project’s budget is lower (around ~500k)
-                        than another watering system, which use in agriculture industry. Moreover, the area to set
-                        up this smart garden is small, so it will be more efficient for people, who love to create a
-                        mini garden but cannot afford a big scale garden. In addition, researching and building a
-                        smart garden by yourself is very interesting, as a developer, I will gain more experience
-                        and knowledge about Arduino aspect, which helps me to discover more about the world of IoT
-                        and robotic. </p>
+                    <h1 style="color:#eff0eb ;">Nguyen Hai Minh Trang:</h1>
+                    <p style="color:#eff0eb ;">Generally, I think your idea is interesting and has no concerns. However,
+                        one thing I suppose you should change is the time gap between two updates. The temperature and
+                        humidity of the soil won't fluctuate much in such a short period of time, so I think you should
+                        expand the time break to a few hours. </p>
+                    <h1 style="color:#eff0eb ;">Comment:</h1>
+                    <p style="color:#eff0eb ;">
+                        I agree with her statement. I will change the update time to 1.5 hour/update.
                 </div>
             </div>
         </div>
         <div class="square2" style="background-color:#eff0eb;">
             <div class="row">
                 <div class="column2">
-                    <h1 style="color: #484E4A ;">Overview:</h1>
-                    <p style="color: #484E4A ;"><b>IoT – Internet of Things: <br></b>
-                        According to BBC , the 'Internet of Things' is the concept of networking lots of devices so that
-                        they can collect and transmit data. The idea that any object or living being can be uniquely
-                        identified on the internet is central to the concept. By automating the capture of information,
-                        greater quantities of it can be stored and processed. Internet of Things can contain monitoring
-                        sensors, people or object that is tracked by RFID tag, or store some database contents. In this
-                        project, developers will create an online buffer storage to store the information that collected
-                        from Arduino. Then, the information will convert to an application and this app will illustrate
-                        the data. <br><br>
-                        <b>Set up:<br></b>
-                        Here is the set up for humidity, and temperature sensor, PIR<br>
-                        The ESP8266 will attach to the Arduino Nano by using jumped wires.<br><br>
-                        <b>Working with Arduino IDE:<br></b>
-                        Import library:<br>
-                        AM2320-master: This will help AM2320 to calculate and work properly. Without this library<br>
-                        file, AM2320 cannot calculate and working.<br>
-                        ESP8266 Community: Set up ESP8266 to work properly.<br><br>
-                        <b>Void set up: Some References<br></b>
-                        <a
-                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
-                        (Set up the offline sensor)<br>
-                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
-                            ESP8266)</a><br><br>
-                        <b>Void loop: Some references<br></b>
-                        <a
-                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
-                        (Set up the offline sensor)<br>
-                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
-                            ESP8266)</a><br><br>
-                        <b>Working with ThingSpeak:<br></b>
-                        According to ThingSpeak, ThingSpeak is an IoT analytics platform service that allows people to
-                        aggregate, visualize, and analyze live data streams in the cloud. Users can send data to
-                        ThingSpeak from their devices, create instant visualization of live data, and send alerts.
-                        ThingSpeak will collect data and send sensor data privately to the cloud. Moreover, this website
-                        will analyze and visualize the data with MATLAB and trigger then reaction. To create a buffer
-                        storage, developer has to register for the ThingSpeak account. After that, create a new channel
-                        to store the information. In the new channel section, user can create from 1 to 8 fields, each
-                        fields will store different data. After filling the name of each field, the user need to add the
-                        metadata, the information of channel data, it can be JSON, XML, or CSV data.<br><br>
-                        <b>Working with Thunkable:<br></b>
-                        On Thunkable, user can develop an IOS or Android app by using drag and drop block. After finish
-                        the project, developer can publish the application on CH Play or IOS by if the application size
-                        is not exceeded 50MB, also people can store application on Thunkable at the limit 200MB for
-                        free. This project will use Thunkable for creating an IOS application which can extract data
-                        from ThingSpeak to developer’s app.
+                    <h1 style="color: #484E4A ;">Phan Do Ngoc Linh</h1>
+                    <p style="color: #484E4A ;">I think your idea of a smart garden is very interesting overall.
+                        However, I want to hear more of your word about describing the creation and development of the
+                        system instead of some links. because when I look at your Description part, it’s not very clear,
+                        or at least to me. All in all, I really enjoy your idea and I think that in the near future when
+                        there are more people living in apartments, this system will be of great help.
+                    </p>
+                    <h1 style="color: #484E4A ;">Comment:</h1>
+                    <p style="color: #484E4A ;">I agree with her comment. However, the void loop and void set up is very
+                        long and it can make readers feel bored. So instead of doing that, I change to insert a
+                        preference link.
                     </p>
                 </div>
                 <div class="column1">
-                    <img src="9.png" class="center-fit">
+                    <img src="12.png" class="center-fit">
                 </div>
             </div>
         </div>
