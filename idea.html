@@ -26,15 +26,15 @@
 
     .square1 {
         width: 2000x;
-        height: 700px;
+        height: 100%;
         background-color: #eff0eb;
         padding: 50px 55px;
         text-align: left;
     }
 
     .square2 {
-        width: 1700px;
-        height: 600px;
+        width: 100%;
+        height: 100%;
         background-color: #484E4A;
         padding: 30px 55px;
         text-align: left;
@@ -109,7 +109,7 @@
 
     .column2 {
         float: left;
-        width: 60%;
+        width: 70%;
         padding: 15px;
         text-align: left;
     }
@@ -171,13 +171,13 @@
             <a href="idea.html">
                 <li> Project Idea </li>
             </a>
-            <a href="#Feedbacks">
+            <a href="feed.html">
                 <li> Feedbacks </li>
             </a>
             <a href="techno.html">
                 <li> IT Technologies </li>
             </a>
-            <a href="#ITwork">
+            <a href="work.html">
                 <li> IT work </li>
             </a>
             <a href="help.html">
@@ -185,6 +185,173 @@
             </a>
         </ul>
     </nav>
+    <div class="main">
+        <div class="square2" style="background-color:#eacb48;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Overview:</h1>
+                    <p style="color: #484E4A ;">This smart garden is using Arduino to calculate the humidity and
+                        temperature of the garden.
+                        After 1 minutes, the Arduino will push data to Thunkable (an IOS creating app) and it will
+                        illustrate the garden’s humidity and temperature. Moreover, the clock has 5 led lights that
+                        light on by pressing button in Thunkable app, or it will automatically turn on when the
+                        light sensor detects no light in the garden (as same as the garden light). Like normal soil
+                        calculator, the smart garden can calculate soil humidity and send notification if the soil
+                        humidity is low or over the range of permission. The user can active the automatically
+                        watering function by pressing button on Thunkable apps.</p>
+                </div>
+                <div class="column1">
+                    <img src="7.jpg" class="center-fit">
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#00a099;">
+            <div class="row">
+                <div class="column1">
+                    <img src="8.png" class="center-fit">
+                </div>
+                <div class="column2">
+                    <h1 style="color:#eff0eb ;">Motivation:</h1>
+                    <p style="color:#eff0eb ;">Firstly, this smart garden project’s budget is lower (around ~500k)
+                        than another watering system, which use in agriculture industry. Moreover, the area to set
+                        up this smart garden is small, so it will be more efficient for people, who love to create a
+                        mini garden but cannot afford a big scale garden. In addition, researching and building a
+                        smart garden by yourself is very interesting, as a developer, I will gain more experience
+                        and knowledge about Arduino aspect, which helps me to discover more about the world of IoT
+                        and robotic. </p>
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#eff0eb;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Overview:</h1>
+                    <p style="color: #484E4A ;"><b>IoT – Internet of Things: <br></b>
+                        According to BBC , the 'Internet of Things' is the concept of networking lots of devices so that
+                        they can collect and transmit data. The idea that any object or living being can be uniquely
+                        identified on the internet is central to the concept. By automating the capture of information,
+                        greater quantities of it can be stored and processed. Internet of Things can contain monitoring
+                        sensors, people or object that is tracked by RFID tag, or store some database contents. In this
+                        project, developers will create an online buffer storage to store the information that collected
+                        from Arduino. Then, the information will convert to an application and this app will illustrate
+                        the data. <br><br>
+                        <b>Set up:<br></b>
+                        Here is the set up for humidity, and temperature sensor, PIR<br>
+                        The ESP8266 will attach to the Arduino Nano by using jumped wires.<br><br>
+                        <b>Working with Arduino IDE:<br></b>
+                        Import library:<br>
+                        AM2320-master: This will help AM2320 to calculate and work properly. Without this library<br>
+                        file, AM2320 cannot calculate and working.<br>
+                        ESP8266 Community: Set up ESP8266 to work properly.<br><br>
+                        <b>Void set up: Some References<br></b>
+                        <a
+                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
+                        (Set up the offline sensor)<br>
+                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
+                            ESP8266)</a><br><br>
+                        <b>Void loop: Some references<br></b>
+                        <a
+                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
+                        (Set up the offline sensor)<br>
+                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
+                            ESP8266)</a><br><br>
+                        <b>Working with ThingSpeak:<br></b>
+                        According to ThingSpeak, ThingSpeak is an IoT analytics platform service that allows people to
+                        aggregate, visualize, and analyze live data streams in the cloud. Users can send data to
+                        ThingSpeak from their devices, create instant visualization of live data, and send alerts.
+                        ThingSpeak will collect data and send sensor data privately to the cloud. Moreover, this website
+                        will analyze and visualize the data with MATLAB and trigger then reaction. To create a buffer
+                        storage, developer has to register for the ThingSpeak account. After that, create a new channel
+                        to store the information. In the new channel section, user can create from 1 to 8 fields, each
+                        fields will store different data. After filling the name of each field, the user need to add the
+                        metadata, the information of channel data, it can be JSON, XML, or CSV data.<br><br>
+                        <b>Working with Thunkable:<br></b>
+                        On Thunkable, user can develop an IOS or Android app by using drag and drop block. After finish
+                        the project, developer can publish the application on CH Play or IOS by if the application size
+                        is not exceeded 50MB, also people can store application on Thunkable at the limit 200MB for
+                        free. This project will use Thunkable for creating an IOS application which can extract data
+                        from ThingSpeak to developer’s app.
+                    </p>
+                </div>
+                <div class="column1">
+                    <img src="9.png" class="center-fit">
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#eacb48;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Tools and Technologies</h1>
+                    <p style="color: #484E4A ;">First, developers must have Arduino IDE for Arduino programming, and
+                        they must learn C language, due to the requirement of coding language in Arduino IDE. Moreover,
+                        for IOS app developers, using Thunkable for app building is a good approach for beginner app
+                        builders, this software allows people to drag block or self-coding to create a professional app.
+                        For Android app developers, MIT app inventor is one of the best places to start building the
+                        application by their own. As same as Thunkable, the MIT app inventor also allows users to
+                        manipulate and design their app by using block or using JavaScript coding language. However, in
+                        this project, programmers will have to work with ThingSpeak, a cloud website which allows people
+                        to store their data as a chart graphic. ThingSpeak and MIT app inventor will get the data from
+                        ThingSpeak and illustrate the information on the app. For Arduino, those kits are recommended
+                        for beginner developer to work on the project Arduino Nano (or Nano), FC-28, AM2320, light
+                        sensor, and PIR those are easy to code and have tutorial on YouTube. Arduino Nano is smaller
+                        than the Arduino UNO and it will be easier to connect with wires and another device, it will
+                        reduce the area of the smart clock and also reduce the assembly cost. For FC-28, AM2320, PIR and
+                        MAX7219, from left to right, which is a soil humidity sensor, temperature and humidity sensor,
+                        body temperature sensor, and led light, those kits already have had tutorial video so it will be
+                        more simplified for beginner to keep track with the project.</p>
+                </div>
+                <div class="column1">
+                    <img src="10.png" class="center-fit">
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#00a099;">
+            <div class="row">
+                <div class="column1">
+                    <img src="11.png" class="center-fit">
+                </div>
+                <div class="column2">
+                    <h1 style="color:#eff0eb ;">Skill Required:</h1>
+                    <p style="color:#eff0eb ;">First, developers must have Arduino IDE for Arduino programming, and they
+                        must learn C language, due to the requirement of coding language in Arduino IDE. Moreover, for
+                        IOS app developers, using Thunkable for app building is a good approach for beginner app
+                        builders, this software allows people to drag block or self-coding to create a professional app.
+                        For Android app developers, MIT app inventor is one of the best places to start building the
+                        application by their own. As same as Thunkable, the MIT app inventor also allows users to
+                        manipulate and design their app by using block or using JavaScript coding language. However, in
+                        this project, programmers will have to work with ThingSpeak, a cloud website which allows people
+                        to store their data as a chart graphic. ThingSpeak and MIT app inventor will get the data from
+                        ThingSpeak and illustrate the information on the app. For Arduino, those kits are recommended
+                        for beginner developer to work on the project Arduino Nano (or Nano), FC-28, AM2320, light
+                        sensor, and PIR those are easy to code and have tutorial on YouTube. Arduino Nano is smaller
+                        than the Arduino UNO and it will be easier to connect with wires and another device, it will
+                        reduce the area of the smart clock and also reduce the assembly cost. For FC-28, AM2320, PIR and
+                        MAX7219, from left to right, which is a soil humidity sensor, temperature and humidity sensor,
+                        body temperature sensor, and led light, those kits already have had tutorial video so it will be
+                        more simplified for beginner to keep track with the project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#eff0eb;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Outcome:</h1>
+                    <p style="color: #484E4A ;">After successfully creating a smart garden. For every minute, the
+                        machine will calculate the air humidity, temperature, and soil humidity. After that, Arduino
+                        will push calculated data to ThingSpeak, each chart in ThingSpeak will contain different type of
+                        data (chart1=air humidity, chart2= temperature). Then, the Thunkable application will get data
+                        from ThingSpeak chart and illustrate in the app interface. Users can use Thunkable for
+                        monitoring the garden condition, if the soil humidity is lower or higher than the expected
+                        range, Thunkable will send a notification to the app users, and they can choose to activate the
+                        watering system or ignore the notification by pressing ‘Yes/No’ button.
+                    </p>
+                </div>
+                <div class="column1">
+                    <img src="8.jpg" class="center-fit">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

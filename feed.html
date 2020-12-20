@@ -1,1 +1,284 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Idea</title>
+</head>
+<style>
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    .square1 {
+        width: 2000x;
+        height: 100%;
+        background-color: #eff0eb;
+        padding: 50px 55px;
+        text-align: left;
+    }
+
+    .square2 {
+        width: 100%;
+        height: 100%;
+        background-color: #484E4A;
+        padding: 30px 55px;
+        text-align: left;
+        color: #eff0eb;
+    }
+
+    .square2 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .square2 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .nav {
+        position: fixed;
+        width: 100%;
+        background-color: #484E4A;
+        overflow: hidden;
+        border-width: 1px 0;
+        margin: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    .nav li {
+        display: inline-block;
+        padding: 14px 30px;
+        font-family: '000 Elephantmen TB';
+        font-size: 30px;
+        color: #eff0eb;
+    }
+
+    .nav a {
+        display: contents;
+    }
+
+    .nav li:hover {
+        background-color: #eff0eb;
+        color: #484E4A;
+        height: fit-content;
+    }
+
+    .main {
+        padding: 0px 0px;
+        margin-top: 100px;
+        height: 100%;
+        width: 100%;
+        background-color: #eff0eb;
+    }
+
+    .column {
+        float: left;
+        margin-top: auto;
+        font-family: '000 Elephantmen TB';
+        width: 28.07%;
+        padding: 50px;
+        text-align: center;
+        font-size: 35px;
+        cursor: pointer;
+        color: #eff0eb;
+    }
+
+    .column1 {
+        float: left;
+        width: 30%;
+        padding: 15px;
+    }
+
+    .column2 {
+        float: left;
+        width: 70%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .column2 h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 40px;
+    }
+
+    .column2 p {
+        font-family: 'Titillium Web';
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .containerTab {
+        padding: 40px 100px;
+        width: 1703px;
+        height: 700px;
+        color: #eff0eb;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .closebtn {
+        float: right;
+        color: #eff0eb;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .center-fit {
+        max-width: 100%;
+        max-height: 70vh;
+        margin: auto;
+    }
+
+    .footer {
+        background-color: #484E4A;
+        padding: 50px 55px;
+        margin-top: 40px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <a href="index.html">
+                <li> Homepage </li>
+            </a>
+            <a href="tp.html">
+                <li> Team Profile </li>
+            </a>
+            <a href="idea.html">
+                <li> Project Idea </li>
+            </a>
+            <a href="feed.html">
+                <li> Feedbacks </li>
+            </a>
+            <a href="techno.html">
+                <li> IT Technologies </li>
+            </a>
+            <a href="work.html">
+                <li> IT work </li>
+            </a>
+            <a href="help.html">
+                <li> Git Tutorial </li>
+            </a>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="square2" style="background-color:#eacb48;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Overview:</h1>
+                    <p style="color: #484E4A ;">This smart garden is using Arduino to calculate the humidity and
+                        temperature of the garden.
+                        After 1 minutes, the Arduino will push data to Thunkable (an IOS creating app) and it will
+                        illustrate the garden’s humidity and temperature. Moreover, the clock has 5 led lights that
+                        light on by pressing button in Thunkable app, or it will automatically turn on when the
+                        light sensor detects no light in the garden (as same as the garden light). Like normal soil
+                        calculator, the smart garden can calculate soil humidity and send notification if the soil
+                        humidity is low or over the range of permission. The user can active the automatically
+                        watering function by pressing button on Thunkable apps.</p>
+                </div>
+                <div class="column1">
+                    <img src="7.jpg" class="center-fit">
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#00a099;">
+            <div class="row">
+                <div class="column1">
+                    <img src="8.png" class="center-fit">
+                </div>
+                <div class="column2">
+                    <h1 style="color:#eff0eb ;">Motivation:</h1>
+                    <p style="color:#eff0eb ;">Firstly, this smart garden project’s budget is lower (around ~500k)
+                        than another watering system, which use in agriculture industry. Moreover, the area to set
+                        up this smart garden is small, so it will be more efficient for people, who love to create a
+                        mini garden but cannot afford a big scale garden. In addition, researching and building a
+                        smart garden by yourself is very interesting, as a developer, I will gain more experience
+                        and knowledge about Arduino aspect, which helps me to discover more about the world of IoT
+                        and robotic. </p>
+                </div>
+            </div>
+        </div>
+        <div class="square2" style="background-color:#eff0eb;">
+            <div class="row">
+                <div class="column2">
+                    <h1 style="color: #484E4A ;">Overview:</h1>
+                    <p style="color: #484E4A ;"><b>IoT – Internet of Things: <br></b>
+                        According to BBC , the 'Internet of Things' is the concept of networking lots of devices so that
+                        they can collect and transmit data. The idea that any object or living being can be uniquely
+                        identified on the internet is central to the concept. By automating the capture of information,
+                        greater quantities of it can be stored and processed. Internet of Things can contain monitoring
+                        sensors, people or object that is tracked by RFID tag, or store some database contents. In this
+                        project, developers will create an online buffer storage to store the information that collected
+                        from Arduino. Then, the information will convert to an application and this app will illustrate
+                        the data. <br><br>
+                        <b>Set up:<br></b>
+                        Here is the set up for humidity, and temperature sensor, PIR<br>
+                        The ESP8266 will attach to the Arduino Nano by using jumped wires.<br><br>
+                        <b>Working with Arduino IDE:<br></b>
+                        Import library:<br>
+                        AM2320-master: This will help AM2320 to calculate and work properly. Without this library<br>
+                        file, AM2320 cannot calculate and working.<br>
+                        ESP8266 Community: Set up ESP8266 to work properly.<br><br>
+                        <b>Void set up: Some References<br></b>
+                        <a
+                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
+                        (Set up the offline sensor)<br>
+                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
+                            ESP8266)</a><br><br>
+                        <b>Void loop: Some references<br></b>
+                        <a
+                            href='https://create.arduino.cc/projecthub/electropeak/complete-guide-to-use-soil-moisture-sensor-w-examples-756b1f'>Link</a>
+                        (Set up the offline sensor)<br>
+                        <a href='GitHub - AntoIOT/anto-esp8266-arduino: Anto client library for ESP8266-Arduino'>(set up
+                            ESP8266)</a><br><br>
+                        <b>Working with ThingSpeak:<br></b>
+                        According to ThingSpeak, ThingSpeak is an IoT analytics platform service that allows people to
+                        aggregate, visualize, and analyze live data streams in the cloud. Users can send data to
+                        ThingSpeak from their devices, create instant visualization of live data, and send alerts.
+                        ThingSpeak will collect data and send sensor data privately to the cloud. Moreover, this website
+                        will analyze and visualize the data with MATLAB and trigger then reaction. To create a buffer
+                        storage, developer has to register for the ThingSpeak account. After that, create a new channel
+                        to store the information. In the new channel section, user can create from 1 to 8 fields, each
+                        fields will store different data. After filling the name of each field, the user need to add the
+                        metadata, the information of channel data, it can be JSON, XML, or CSV data.<br><br>
+                        <b>Working with Thunkable:<br></b>
+                        On Thunkable, user can develop an IOS or Android app by using drag and drop block. After finish
+                        the project, developer can publish the application on CH Play or IOS by if the application size
+                        is not exceeded 50MB, also people can store application on Thunkable at the limit 200MB for
+                        free. This project will use Thunkable for creating an IOS application which can extract data
+                        from ThingSpeak to developer’s app.
+                    </p>
+                </div>
+                <div class="column1">
+                    <img src="9.png" class="center-fit">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
