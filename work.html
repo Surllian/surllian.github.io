@@ -43,34 +43,139 @@
         height: fit-content;
     }
 
-
     .square1 {
-        width: 2000x;
-        height: 1000px;
+        width: 100%;
+        height: 750px;
         background-color: #eff0eb;
-        padding: 50px 55px;
         text-align: left;
     }
 
-
     .square2 {
         width: 100%;
-        height: 500px;
+        height: 100%;
         background-color: #484E4A;
-        padding: 30px 55px;
+        padding: 150px 55px;
         text-align: left;
         color: #eff0eb;
     }
 
-    .square2 h1 {
+    .square2 h1{
+        color: #eff0eb;
+        font-size: 35px;
         font-family: '000 Elephantmen TB';
-        font-size: 40px;
+        text-align: center;
     }
 
-    .square2 p {
+    .square2 p{
+        color: #eff0eb;
+        font-size: 15px;
+        font-family: 'Titillium Web';
+    }
+
+    .column1 {
+        float: left;
+        width: 5%;
+        height: 790px;
+        padding: 15px;
+        background-color: #eacb48;
+    }
+
+    .column2 {
+        float: left;
+        width: 90%;
+        height: 790px;
+        vertical-align: middle;
+        padding: 15px;
+        text-align: center;
+        background-color: #eff0eb;
+    }
+
+    .column2 h1 {
+        font-size: 80px;
+        font-family: '000 Elephantmen TB';
+        padding: 250px 0px;
+        color: #484E4A;
+    }
+
+    .column2 p{
+        font-family: 'Titillium Web';
+        font-size: 45px;
+        text-align: center;
+        color: #484E4A;
+    }
+
+    .column3 {
+        float: left;
+        width: 90%;
+        height: 1200px;
+        padding: 15px;
+        text-align: center;
+        background-color: #eff0eb;
+    }
+
+    .column3 h1 {
+        font-size: 80px;
+        font-family: '000 Elephantmen TB';
+        padding: 10px 0px;
+        color: #484E4A;
+    }
+
+    .column3 p {
         font-family: 'Titillium Web';
         font-size: 25px;
         text-align: justify;
+        color: #484E4A;
+    }
+
+    .column3 p b {
+        color: #00a099;
+    }
+
+    .column4 {
+        float: left;
+        width: 5%;
+        height: 1200px;
+        padding: 15px;
+        background-color: #00a099;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .main {
+        padding: 0px 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #eff0eb;
+    }
+
+
+    .footer {
+        background-color: #484E4A;
+        padding: 50px 55px;
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        vertical-align:middle;
+    }
+
+    .footer h1 {
+        font-family: '000 Elephantmen TB';
+        font-size: 30px;
+        color: #eff0eb;
+    }
+
+    @media screen and (max-width:600px) {
+
+        .column1,
+        .column3,
+        .column2,
+        .column4 {
+            width: 100%;
+        }
     }
 </style>
 
@@ -103,12 +208,81 @@
             </a>
         </ul>
     </nav>
-    <div class="square1">
-        <div class="square2">
-            <video width="320" height="240" controls>
-                <source src="1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <div class='main'>
+        <div class='square1'>
+            <div class='row'>
+                <div class='column4'>
+
+                </div>
+                <div class='column2'>
+                    <h1>Overview...</h1>
+                    <p><b>This is a professional IT interview: <br>
+                        Mr.Tuan, an It professional, who work in Los Angles, as a data engineer</b>
+                    </p>
+                </div>
+                <div class='column4'>
+
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column1'>
+
+                </div>
+                <div class='column2'>
+                    <video width="100%" height="100%" controls>
+                        <source src="2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class='column1'>
+
+                </div>
+            </div>
+        </div>
+        <div class='square1'>
+            <div class='row'>
+                <div class='column4'>
+
+                </div>
+                <div class='column3'>
+                    <h1>Subtitle:</h1>
+                    <p>
+                        <b>Detail about IT work: <br></b>
+                        He is a data engineer, he writes software that move data from one location into another
+                        to progress and analyze data. He is also a reporting engineer, so he creates visual graphs and
+                        charts for the executives and financial analysts in the hospital finance department.<br><br>
+                        <b>The industry he work in: <br></b>
+                        It is not a clinical hospital industry but in the hospital finance, more leadership and
+                        financial information for hospitals.<br><br>
+                        <b>What other kinds of work do he has to do: <br></b>
+                        Managing page information, revenues, and expenses, but he also manages patient revenue, and
+                        employee salary.<br><br>
+                        <b>Outside work: <br></b>
+                        Working on a startup, he hasn't got any funding, he tries to develop a product, put a contractor
+                        for hospital into Cloud. On Cloud, he will provide tools, and examples for everyone. Also, this
+                        can be accessed by mobile phone.<br><br>
+                        <b>Interactions with another IT professional:<br></b>
+                        As a developer, he has to work with the IT people to set up and manage servers. For instance, IT
+                        sets up and manages servers, IT manages infrastructure, and business analysts.<br><br>
+                        <b>Spend most time on:<br></b>
+                        Think of a new way to simplify a problem, write a simple process for someone. For instance,
+                        analysts are collecting data into Excel every week, and have to email the manager. His job is to
+                        write software that collects, creates charts, graphs and sends data directly to the
+                        manager.<br><br>
+                        <b>Most challenging:<br></b>
+                        keep learning new things, software always has sth new. For instance, today he has to write a web
+                        app in PHP, and tomorrow He has to work with dot.net.
+
+
+                    </p>
+                </div>
+                <div class='column4'>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Nguyen Xuan Huy-s3877913</h1>
         </div>
     </div>
 </body>
